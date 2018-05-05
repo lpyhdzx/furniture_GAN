@@ -18,7 +18,7 @@ class Config(object):
     lr1 = 2e-4  # 生成器的学习率
     lr2 = 2e-4  # 判别器的学习率
     beta1 = 0.5  # Adam优化器的beta1参数
-    gpu = True  # 是否使用GPU
+    gpu = False  # 是否使用GPU
     nz = 100  # 噪声维度
     ngf = 256  # 生成器feature map数
     ndf = 256  # 判别器feature map数
