@@ -13,15 +13,15 @@ class Config(object):
     data_path = 'data/'  # 数据集存放路径
     num_workers = 4  # 多进程加载数据所用的进程数
     image_size = 256  # 图片尺寸
-    batch_size = 8
+    batch_size = 4
     max_epoch = 200
     lr1 = 2e-4  # 生成器的学习率
     lr2 = 2e-4  # 判别器的学习率
     beta1 = 0.5  # Adam优化器的beta1参数
-    gpu = False  # 是否使用GPU
+    gpu = True  # 是否使用GPU
     nz = 100  # 噪声维度
-    ngf = 256  # 生成器feature map数
-    ndf = 256  # 判别器feature map数
+    ngf = 64  # 生成器feature map数
+    ndf = 64  # 判别器feature map数
 
     save_path = 'imgs/'  # 生成图片保存路径
 
